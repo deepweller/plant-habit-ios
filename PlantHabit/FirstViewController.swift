@@ -9,6 +9,12 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet var inputTxt: UITextField!
+    @IBOutlet var outputLbl: UILabel!
+    
+    @IBAction func sendBtn(_ sender: UIButton) {
+        outputLbl.text = inputTxt.text!
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
