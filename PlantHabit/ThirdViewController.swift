@@ -10,21 +10,37 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet var nowDate: UILabel!
+    @IBOutlet var selectDate: UILabel!
+    
+    let timeSelector: Selector = #selector(ThirdViewController.updateTime)
+    let interval = 1.0
+    var count = 0
+    
+    @IBAction func selectDateTime(_ sender: UIDatePicker) {
+        let pickView = sender
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
+        selectDate.text = "선택시간 : " + formatter.string(from: pickView.date)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func updateTime() {
+//        nowDate.text = String(count)
+//        count += 1
+        
+        let date = NSDate()
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
+        nowDate.text = "현재시간 : " + formatter.string(from: date as Date)
     }
-    */
-
 }
