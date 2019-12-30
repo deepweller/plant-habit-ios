@@ -16,6 +16,7 @@
 		1F75FA3B23B785BF00DDF7ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F75FA3923B785BF00DDF7ED /* LaunchScreen.storyboard */; };
 		1F75FA4623B785BF00DDF7ED /* PlantHabitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F75FA4523B785BF00DDF7ED /* PlantHabitTests.swift */; };
 		1F75FA5123B785BF00DDF7ED /* PlantHabitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F75FA5023B785BF00DDF7ED /* PlantHabitUITests.swift */; };
+		1F75FA6D23B8735C00DDF7ED /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F75FA6C23B8735C00DDF7ED /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1F75FA4C23B785BF00DDF7ED /* PlantHabitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantHabitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F75FA5023B785BF00DDF7ED /* PlantHabitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHabitUITests.swift; sourceTree = "<group>"; };
 		1F75FA5223B785BF00DDF7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F75FA6C23B8735C00DDF7ED /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1F75FA3723B785BF00DDF7ED /* Assets.xcassets */,
 				1F75FA3923B785BF00DDF7ED /* LaunchScreen.storyboard */,
 				1F75FA3C23B785BF00DDF7ED /* Info.plist */,
+				1F75FA6C23B8735C00DDF7ED /* ThirdViewController.swift */,
 			);
 			path = PlantHabit;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				1F75FA3323B785BB00DDF7ED /* SecondViewController.swift in Sources */,
 				1F75FA3123B785BB00DDF7ED /* FirstViewController.swift in Sources */,
+				1F75FA6D23B8735C00DDF7ED /* ThirdViewController.swift in Sources */,
 				1F75FA2D23B785BB00DDF7ED /* AppDelegate.swift in Sources */,
 				1F75FA2F23B785BB00DDF7ED /* SceneDelegate.swift in Sources */,
 			);
